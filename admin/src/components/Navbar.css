@@ -1,0 +1,68 @@
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* top: 10px; */
+    left: 15%;
+    width: 85%;
+    height: 8%;
+    background-color: #031b58;
+    padding-inline: 40px;
+}
+
+.topNav p {
+    color: white;
+    font-size: 20px;
+}
+
+.logo {
+    width: 200px;
+    /* height: 60px; */
+}
+
+.navMain {
+    padding-block: 3%;
+    width: 15%;
+    max-height: 100%;
+    height: 100vh;
+    background-color: #031b58;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    left: 0;
+    overflow: auto;
+
+    /* Hide scrollbar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.navMain::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+.navMain a,
+.topNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    /* text-align: center; */
+}
+.navMain a{
+    padding-left: 15%;
+}
+#logoCon{
+    padding-left: 0px;
+}
+.topNav a {
+    letter-spacing: 1px;
+}
+
+.navMain a:hover{
+    color: #FF2D55;
+}
