@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-const API = "http://localhost:5000";
+const API = "https://admin.theproxima.org";
 
 export default function ConferenceAdmin() {
   const [list, setList] = useState([]);

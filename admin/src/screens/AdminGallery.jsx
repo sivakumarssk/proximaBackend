@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API = "http://localhost:5000";    // base
+const API = "https://admin.theproxima.org";    // base
 const ENDPOINT = `${API}/api`;          // JSON + images
 const withBase = (src) => (!src ? "" : /^https?:\/\//i.test(src) ? src : `${API}${src.startsWith("/") ? "" : "/"}${src}`);
 

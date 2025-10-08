@@ -9,8 +9,12 @@ const conntactCtrl = require('../controlers/contactController');
 const newsletterCtrl = require('../controlers/newsletterController');
 const { getConferences, createConference, updateConference, deleteConference } = require('../controlers/conferenceController');
 const { getSponsors, createSponsor, deleteSponsor } = require('../controlers/sponsorController');
+const { login, register } = require('../controlers/LoginController');
+const { getGuideline, saveGuideline } = require('../controlers/guidelineController');
 
 
+router.post('/login',login)
+router.post('/register',register)
 
 router.get('/home', homeCtrl.getHome);
 router.post('/home', homeCtrl.createHome);
@@ -60,5 +64,10 @@ router.route("/conferences/:id")
 router.route("/sponsors").get(getSponsors).post(createSponsor);
 router.route("/sponsors/:id")
   .delete(deleteSponsor);
+
+router.route("/guidelines")
+  .get(getGuideline)
+  .post(saveGuideline);
+
 
 module.exports = router;

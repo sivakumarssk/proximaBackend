@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API = "http://localhost:5000/api"; // your temporary backend url
+const API = "https://admin.theproxima.org/api"; // your temporary backend url
 
 export default function AdminHome() {
   const [doc, setDoc] = useState(null);

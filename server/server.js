@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-const PORT = 50030;
+const PORT = 5030;
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
@@ -38,10 +38,10 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use('/api', userRouter);
 
-// app.use(express.static(path.join(__dirname, '..', 'admin', 'dist')));
-// app.get('*',(req,res)=>{
-//     res.sendFile(path.join(__dirname, '..', 'admin', 'dist', 'index.html'))
-// })
+app.use(express.static(path.join(__dirname, '..', 'admin', 'dist')));
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(__dirname, '..', 'admin', 'dist', 'index.html'))
+})
 app.listen(PORT, () => {
     console.log('Server is started at', PORT);
 });

@@ -33,6 +33,7 @@ function Navbar() {
                 <Link to="/upcomingEvents">Upcoming Events</Link>
                 <Link to="/sponsorConferences">Conferences List</Link>
                 <Link to="/sponsorList">Sponsor List</Link>
+                <Link to="/guidelines">Guidelines</Link>
                 <Link to="/adminContact">Contact Form</Link>
                 <Link to="/newsletterList">Newsletter List</Link>
                 

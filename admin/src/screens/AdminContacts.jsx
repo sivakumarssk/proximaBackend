@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 
-const API = "http://localhost:5000";
+const API = "https://admin.theproxima.org";
 const ENDPOINT = `${API}/api`;
 
 export default function AdminContacts() {

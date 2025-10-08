@@ -4,7 +4,7 @@ import Home from './screens/Home'
 import Navbar from './components/Navbar'
 import Login from './screens/Login'
 import ProtectedRoute from './components/ProtectedRoute'
-import AboutUs from './screens/AboutUs'
+import AboutUs from './screens/AdminAboutUs'
 import AdminServices from './screens/AdminServices'
 import AdminGallery from './screens/AdminGallery'
 import AdminUpcoming from './screens/AdminUpcoming'
@@ -12,6 +12,7 @@ import AdminContacts from './screens/AdminContacts'
 import AdminNewsletter from './screens/AdminNewsletter'
 import ConferenceAdmin from './screens/ConferenceAdmin'
 import SponsorsList from './screens/SponsorsList'
+import Guidelines from './screens/Guidelines'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path='/upcomingEvents' element={<ProtectedRoute><AdminUpcoming /></ProtectedRoute>} />
         <Route path='/sponsorConferences' element={<ProtectedRoute><ConferenceAdmin /></ProtectedRoute>} />
         <Route path='/sponsorList' element={<ProtectedRoute><SponsorsList /></ProtectedRoute>} />
+        <Route path='/guidelines' element={<ProtectedRoute><Guidelines /></ProtectedRoute>} />
         <Route path='/adminContact' element={<ProtectedRoute><AdminContacts /></ProtectedRoute>} />
         <Route path='/newsletterList' element={<ProtectedRoute><AdminNewsletter /></ProtectedRoute>} />
       </Routes>
